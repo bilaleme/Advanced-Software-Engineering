@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/register.js"></script>
+
+<script src="js/home.js"></script>
+
+<link rel="stylesheet" href="css/home.css">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWhSE1HAi753_M8rcFTfcbBXUQInf8y6c&v=3.exp&sensor=true"></script>
+
+</head>
+<body>
+	<div class="parent">
+		<div class="container">
+			<h2>Enter Location</h2>
+			<form>
+				<div class="form-group">
+					<label for="location1">Location 1 :</label> <input type="text"
+						class="form-control" id="loc1">
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="location2">Location 2 :</label> <input type="text"
+						class="form-control" id="loc2">
+				</div>
+			</form>
+			
+			<div class="form-group">
+				<button id="calBtn" onclick="ShowMap()">Calculate Path</button>
+			</div>
+			
+			<div class="mContainer"></div>
+		</div>
+		<div id="mcanvas"></div>
+	</div>
+
+
+</body>
+</html>
