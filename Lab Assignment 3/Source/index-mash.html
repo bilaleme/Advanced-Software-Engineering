@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Mashup</title>
+<link rel="stylesheet" href="css/mash.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+<script src="js/service.js"></script>
+<script>
+	page = 'index-mash.html';
+</script>
+<script src="js/main.js"></script>
+</head>
+<body>
+	<div>
+		<img src="m.jpg">
+	</div>
+	<div style="width: 100%;">
+		<div class="form-wrapper" style="margin: 0 auto;">
+			<input type="text" id="search" placeholder="Search for..." required>
+			<button value="go" id="submit" onclick="callAPIs('#search')">GO</button>
+		</div>
+	</div>
+
+	<div class="google"></div>
+	<div class="youtube"></div>
+</body>
+</html>
