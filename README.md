@@ -6,3 +6,6 @@ Lab Assignment 2 : https://github.com/bilaleme/Advanced-Software-Engineering/wik
 
 Lab Assignment 3 :
 https://github.com/bilaleme/Advanced-Software-Engineering/wiki/Lab-Assignment-3-Report
+
+Lab Assigment 4 :
+https://github.com/bilaleme/Advanced-Software-Engineering/wiki/Lab-Assignment-4-Report
