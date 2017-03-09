@@ -15,3 +15,6 @@ https://github.com/bilaleme/Advanced-Software-Engineering/wiki/Lab-Assignment-5-
 
 Lab Assignment 6 :
 https://github.com/bilaleme/Advanced-Software-Engineering/wiki/Lab-Assignment-6-Report
+
+Lab Assignment 7 :
+https://github.com/bilaleme/Advanced-Software-Engineering/wiki/Lab-Assignment-7-Report
