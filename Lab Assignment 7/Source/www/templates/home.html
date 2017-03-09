@@ -1,0 +1,34 @@
+
+
+<ion-view class="container">
+<h1 style="color:blue;">home</h1>
+<label class="item item-input" style="border:none;">
+  <span class="input-label" style="display:inline-block;">Query</span>
+  <textarea ng-model="query" name="Text1" cols="20" rows="3"></textarea>
+</label>
+    
+
+
+<button class="button button-balanced home" ng-click='sentiment()'>Calculate</button>
+
+<button class="button button-assertive home" ng-click="call(-1)">Back</button>
+
+<div style="text-align:left; margin-top:10px;">
+<strong>Positive</strong>
+<progress max=1 value="{{positive}}"></progress>
+</div>
+    
+<div style="text-align:left; margin-top:10px;">
+<strong>Negative</strong>
+<progress max=1 value="{{negative}}"></progress>
+</div>
+    
+<div style="text-align:left; margin-top:10px;">
+<strong>Top Keywords</strong>
+    <ul ng-model="items">
+    <li style="display:inline-block; margin-left:10px; border:1px solid black; padding:2px; margin-top:10px;" ng-repeat="x in items  | limitTo:5">{{x[0] + "   " + x[1] + "%"}}</li>
+    </ul>
+</div>
+    
+
+</ion-view>
