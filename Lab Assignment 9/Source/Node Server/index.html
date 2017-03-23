@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <title>Sentimental Mash</title>
+</head>
+<body ng-app="sentiment" ng-controller="tableController">
+
+<h1 style="text-align:center;">Messages Sentiment Trend</h1>
+
+<div style = 'display:block;' class="alert alert-success">
+    <strong>{{response}}</strong>
+</div>
+
+<div style="display: block; text-align: center; margin-bottom: 50px; margin-top: 50px;"><input ng-model="query" style="width:200px;display:inline-block;" type="text" class="form-control" placeholder="Query"><button ng-click="callRest(query)" style="display:inline-block; margin-left:10px;" class="btn btn-primary">Push Message</button></div>
+
+<div id="curve_chart" style="height:350px; width:500px; margin-bottom:20px; margin-left:auto; margin-right:auto;"></div>
+
+<table class="table table-bordered table-hover" style="width:60%; margin-left:auto; margin-right:auto;" >
+    <thead>
+    <tr>
+        <th>Message</th>
+        <th>Positive Score</th>
+        <th>Negative Score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="x in messages">
+        <td>{{x.message}}</td>
+        <td>{{x.positive}}</td>
+        <td>{{x.negative}}</td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+<footer>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="firebaseSetup.js"></script>
+
+    <script src="angularFile.js"></script>
